@@ -20,7 +20,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:riverpod/src/framework.dart';
 
 //final musicProvider = StateNotifierProvider<MusicModelNotifier, Collection>((ref) => MusicModelNotifier(Collection(title: "hdh")));
-final soundCloudClient = Provider<SoundCloudClient>((ref) => SoundCloudClient(SoundCloudConfig(OAuthToken: "2-297002-1430183232-iW0BiF5oTP0MM")));
+final soundCloudClient = Provider<SoundCloudClient>((ref) => SoundCloudClient(SoundCloudConfig(OAuthToken: "your oauth-token")));
 final audioPlayerClient = Provider<AudioPlayer>((ref) => AudioPlayer());
 void main() {
   const app = ProviderScope(child: MyApp());
